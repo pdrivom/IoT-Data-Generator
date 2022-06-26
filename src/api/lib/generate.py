@@ -1,8 +1,7 @@
 import random
-
 import re
 
-Here is something I want to talk about::
+
 def generate(template):
     """A really useful function.
 
