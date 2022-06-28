@@ -18,3 +18,8 @@ jobs:
       - name: Test
         working-directory: ./src
         run: docker-compose up -d && docker-compose run --rm api sh -c "pytest"
+      - name: Build the Docker image
+        working-directory: ./src
+        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:latest  
+      - name: Docker Push
+        run: docker push pdrivom/iot-data-generator:latest  
