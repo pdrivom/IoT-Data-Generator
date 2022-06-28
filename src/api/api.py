@@ -17,6 +17,18 @@ devices = Query()
 templates = Query()
 v1 = FastAPI()
 
+
+@v1.on_event("startup")
+async def startup():
+    autostart = table_devices.search(devices.auto_start == True)
+    for device in autostart:
+        await __start_device(device['name'])
+
+@v1.on_event("shutdown")
+async def shutdown():
+    for device in running_devices.copy():
+        await __stop_device(device)
+
 @v1.get("/api/v1/devices", tags=["Devices"], response_model=Page[Device])
 async def get_devices(page: int = 1, size: int = 50):
     """Gets all saved devices"""
@@ -106,10 +118,7 @@ async def add_metadata(name: str, request: Request):
     table_templates.insert(Document(template, device.doc_id))
     return table_templates.get(doc_id=device.doc_id)
 
-@v1.put("/api/v1/device/{name}/start", tags=["Device"], response_model=Page[Device], status_code=202)
-async def start_device(name: str):
-    """Starts the device publication routine"""
-
+async def __start_device(name: str):
     if name in running_devices:
         raise HTTPException(status_code=403, detail= f"The device {name} is already running.")
     else:
@@ -117,7 +126,19 @@ async def start_device(name: str):
         metadata = await get_metadata(name)
         producer = Producer(device, metadata)
         producer.start()
-        return await get_running_devices()
+
+@v1.put("/api/v1/device/{name}/start", tags=["Device"], response_model=Page[Device], status_code=202)
+async def start_device(name: str):
+    """Starts the device publication routine"""
+
+    await __start_device(name)
+    return await get_running_devices()
+
+async def __stop_device(name: str):
+        device = await get_device(name)
+        producer = running_devices[device['name']]
+        producer.stop = True
+        producer.join()
 
 @v1.put("/api/v1/device/{name}/stop", tags=["Device"], response_model=Page[Device], status_code=202)
 async def stop_device(name: str):
@@ -126,10 +147,7 @@ async def stop_device(name: str):
     if not name in running_devices:
         raise HTTPException(status_code=403, detail= f"The device {name} is not running.")
     else:
-        device = await get_device(name)
-        producer = running_devices[device['name']]
-        producer.stop = True
-        producer.join()
+        await __stop_device(name)
         return await get_running_devices()
 
 @v1.get("/api/v1/metadata/sample", tags=["Metadata"])

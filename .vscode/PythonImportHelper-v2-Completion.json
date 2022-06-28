@@ -796,7 +796,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "db = TinyDB('./database/devices.json')\ntable_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())",
+        "peekOfCode": "db = TinyDB('./database/devices.json')\ntable_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:",
         "detail": "src.api.api",
         "documentation": {}
     },
@@ -805,7 +805,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "table_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])",
+        "peekOfCode": "table_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:\n        await __start_device(device['name'])",
         "detail": "src.api.api",
         "documentation": {}
     },
@@ -814,7 +814,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "table_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():",
+        "peekOfCode": "table_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:\n        await __start_device(device['name'])\n@v1.on_event(\"shutdown\")",
         "detail": "src.api.api",
         "documentation": {}
     },
@@ -823,7 +823,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "devices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"",
+        "peekOfCode": "devices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:\n        await __start_device(device['name'])\n@v1.on_event(\"shutdown\")\nasync def shutdown():",
         "detail": "src.api.api",
         "documentation": {}
     },
@@ -832,7 +832,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "templates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"\n    db.drop_tables()",
+        "peekOfCode": "templates = Query()\nv1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:\n        await __start_device(device['name'])\n@v1.on_event(\"shutdown\")\nasync def shutdown():\n    for device in running_devices.copy():",
         "detail": "src.api.api",
         "documentation": {}
     },
@@ -841,7 +841,7 @@
         "kind": 5,
         "importPath": "src.api.api",
         "description": "src.api.api",
-        "peekOfCode": "v1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"\n    db.drop_tables()\n    return paginate(table_devices.all())",
+        "peekOfCode": "v1 = FastAPI()\n@v1.on_event(\"startup\")\nasync def startup():\n    autostart = table_devices.search(devices.auto_start == True)\n    for device in autostart:\n        await __start_device(device['name'])\n@v1.on_event(\"shutdown\")\nasync def shutdown():\n    for device in running_devices.copy():\n        await __stop_device(device)",
         "detail": "src.api.api",
         "documentation": {}
     }
