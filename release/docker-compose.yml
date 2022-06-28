@@ -35,7 +35,7 @@ services:
 
   api:
     hostname: iot-data-generator-api
-    image: pdrivom/iot-data-generator:v1
+    image: pdrivom/iot-data-generator:latest
     depends_on:
       kafka:
         condition: service_healthy
