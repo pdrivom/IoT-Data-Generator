@@ -1,6 +1,7 @@
 import random
 import re
-
+import importlib
+from lib.helpers.city import city
 
 def generate(template):
     """A really useful function.
@@ -54,7 +55,9 @@ def generate(template):
         matches = re.match(regex, template)
         if matches is not None:
             k = template.find('(')
-            mod = __import__('methods.' + template[2:k])
-            return eval('mod.{}.{}'.format(template[2:k], template[2:-2]))
+            method = 'lib.helpers.' + template[2:k]
+            mod = importlib.import_module(method)
+            call = 'mod.{}'.format(template[2:-2])
+            return eval(call)
         else:
             return template

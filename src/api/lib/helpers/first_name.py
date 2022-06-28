@@ -1,4 +1,4 @@
-from methods import fake
+from lib.helpers.generator import fake
 
 
 def first_name():

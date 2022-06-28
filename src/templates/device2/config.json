@@ -1,0 +1,9 @@
+{
+    "name": "gps",
+    "kafka_server": "kafka:9092",
+    "kafka_topic": "location",
+    "frequency_s": 1,
+    "messages": 100,
+    "timestamp_label": "date",
+    "auto_start": true
+}

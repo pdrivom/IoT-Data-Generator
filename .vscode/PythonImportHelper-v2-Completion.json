@@ -1,0 +1,848 @@
+[
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "randint",
+        "importPath": "random",
+        "description": "random",
+        "isExtraImport": true,
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "importPath": "lib.helpers.generator",
+        "description": "lib.helpers.generator",
+        "isExtraImport": true,
+        "detail": "lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "binascii",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "binascii",
+        "description": "binascii",
+        "detail": "binascii",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "sleep",
+        "importPath": "time",
+        "description": "time",
+        "isExtraImport": true,
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "KafkaProducer",
+        "importPath": "kafka",
+        "description": "kafka",
+        "isExtraImport": true,
+        "detail": "kafka",
+        "documentation": {}
+    },
+    {
+        "label": "Thread",
+        "importPath": "threading",
+        "description": "threading",
+        "isExtraImport": true,
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "generate",
+        "importPath": "lib.generate",
+        "description": "lib.generate",
+        "isExtraImport": true,
+        "detail": "lib.generate",
+        "documentation": {}
+    },
+    {
+        "label": "generate",
+        "importPath": "lib.generate",
+        "description": "lib.generate",
+        "isExtraImport": true,
+        "detail": "lib.generate",
+        "documentation": {}
+    },
+    {
+        "label": "jsons",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jsons",
+        "description": "jsons",
+        "detail": "jsons",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "re",
+        "description": "re",
+        "isExtraImport": true,
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "importlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib",
+        "description": "importlib",
+        "detail": "importlib",
+        "documentation": {}
+    },
+    {
+        "label": "city",
+        "importPath": "lib.helpers.city",
+        "description": "lib.helpers.city",
+        "isExtraImport": true,
+        "detail": "lib.helpers.city",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "TestClient",
+        "importPath": "fastapi.testclient",
+        "description": "fastapi.testclient",
+        "isExtraImport": true,
+        "detail": "fastapi.testclient",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "v1",
+        "importPath": "api",
+        "description": "api",
+        "isExtraImport": true,
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "table_devices",
+        "importPath": "api",
+        "description": "api",
+        "isExtraImport": true,
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "running_devices",
+        "importPath": "api",
+        "description": "api",
+        "isExtraImport": true,
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "table_templates",
+        "importPath": "api",
+        "description": "api",
+        "isExtraImport": true,
+        "detail": "api",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Request",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "fastapi_pagination",
+        "description": "fastapi_pagination",
+        "isExtraImport": true,
+        "detail": "fastapi_pagination",
+        "documentation": {}
+    },
+    {
+        "label": "add_pagination",
+        "importPath": "fastapi_pagination",
+        "description": "fastapi_pagination",
+        "isExtraImport": true,
+        "detail": "fastapi_pagination",
+        "documentation": {}
+    },
+    {
+        "label": "paginate",
+        "importPath": "fastapi_pagination",
+        "description": "fastapi_pagination",
+        "isExtraImport": true,
+        "detail": "fastapi_pagination",
+        "documentation": {}
+    },
+    {
+        "label": "TinyDB",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Query",
+        "importPath": "tinydb",
+        "description": "tinydb",
+        "isExtraImport": true,
+        "detail": "tinydb",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "tinydb.table",
+        "description": "tinydb.table",
+        "isExtraImport": true,
+        "detail": "tinydb.table",
+        "documentation": {}
+    },
+    {
+        "label": "Device",
+        "importPath": "models.models",
+        "description": "models.models",
+        "isExtraImport": true,
+        "detail": "models.models",
+        "documentation": {}
+    },
+    {
+        "label": "Producer",
+        "importPath": "lib.producer.producer",
+        "description": "lib.producer.producer",
+        "isExtraImport": true,
+        "detail": "lib.producer.producer",
+        "documentation": {}
+    },
+    {
+        "label": "running_devices",
+        "importPath": "lib.producer.producer",
+        "description": "lib.producer.producer",
+        "isExtraImport": true,
+        "detail": "lib.producer.producer",
+        "documentation": {}
+    },
+    {
+        "label": "bool",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.bool",
+        "description": "src.api.lib.helpers.bool",
+        "peekOfCode": "def bool():\n    return random.randint(0, 10) % 2 == 0",
+        "detail": "src.api.lib.helpers.bool",
+        "documentation": {}
+    },
+    {
+        "label": "choice",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.choice",
+        "description": "src.api.lib.helpers.choice",
+        "peekOfCode": "def choice(lst):\n    return random.choice(lst)",
+        "detail": "src.api.lib.helpers.choice",
+        "documentation": {}
+    },
+    {
+        "label": "city",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.city",
+        "description": "src.api.lib.helpers.city",
+        "peekOfCode": "def city():\n    return fake.city()",
+        "detail": "src.api.lib.helpers.city",
+        "documentation": {}
+    },
+    {
+        "label": "company",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.company",
+        "description": "src.api.lib.helpers.company",
+        "peekOfCode": "def company():\n    return fake.company()",
+        "detail": "src.api.lib.helpers.company",
+        "documentation": {}
+    },
+    {
+        "label": "email",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.email",
+        "description": "src.api.lib.helpers.email",
+        "peekOfCode": "def email():\n    return fake.email()",
+        "detail": "src.api.lib.helpers.email",
+        "documentation": {}
+    },
+    {
+        "label": "first_name",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.first_name",
+        "description": "src.api.lib.helpers.first_name",
+        "peekOfCode": "def first_name():\n    return fake.first_name()",
+        "detail": "src.api.lib.helpers.first_name",
+        "documentation": {}
+    },
+    {
+        "label": "floating",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.floating",
+        "description": "src.api.lib.helpers.floating",
+        "peekOfCode": "def floating(min, max, decimal=2):  # ToDo: , pattern):\n    return round(random.uniform(min, max), decimal)",
+        "detail": "src.api.lib.helpers.floating",
+        "documentation": {}
+    },
+    {
+        "label": "gender",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.gender",
+        "description": "src.api.lib.helpers.gender",
+        "peekOfCode": "def gender():\n    return 'male' if randint(0, 10) % 2 else 'female'",
+        "detail": "src.api.lib.helpers.gender",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "src.api.lib.helpers.generator",
+        "description": "src.api.lib.helpers.generator",
+        "peekOfCode": "fake = Faker()",
+        "detail": "src.api.lib.helpers.generator",
+        "documentation": {}
+    },
+    {
+        "label": "guid",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.guid",
+        "description": "src.api.lib.helpers.guid",
+        "peekOfCode": "def guid():\n    return str(uuid.uuid4())",
+        "detail": "src.api.lib.helpers.guid",
+        "documentation": {}
+    },
+    {
+        "label": "integer",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.integer",
+        "description": "src.api.lib.helpers.integer",
+        "peekOfCode": "def integer(min=0, max=10):\n    return random.randint(min, max)",
+        "detail": "src.api.lib.helpers.integer",
+        "documentation": {}
+    },
+    {
+        "label": "last_name",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.last_name",
+        "description": "src.api.lib.helpers.last_name",
+        "peekOfCode": "def last_name():\n    return fake.last_name()",
+        "detail": "src.api.lib.helpers.last_name",
+        "documentation": {}
+    },
+    {
+        "label": "lorem",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.lorem",
+        "description": "src.api.lib.helpers.lorem",
+        "peekOfCode": "def lorem(count=1, unites='sentences'):\n    assert 'ToDo: must be implement!'",
+        "detail": "src.api.lib.helpers.lorem",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.name",
+        "description": "src.api.lib.helpers.name",
+        "peekOfCode": "def name():\n    return fake.name()",
+        "detail": "src.api.lib.helpers.name",
+        "documentation": {}
+    },
+    {
+        "label": "object_id",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.object_id",
+        "description": "src.api.lib.helpers.object_id",
+        "peekOfCode": "def object_id():\n    timestamp = '{0:x}'.format(int(time.time()))\n    rest = binascii.b2a_hex(os.urandom(8)).decode('ascii')\n    return timestamp + rest",
+        "detail": "src.api.lib.helpers.object_id",
+        "documentation": {}
+    },
+    {
+        "label": "phone",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.phone",
+        "description": "src.api.lib.helpers.phone",
+        "peekOfCode": "def phone():\n    n = '0000000000'\n    while '9' in n[3:6] or n[3:6] == '000' or n[6] == n[7] == n[8] == n[9]:\n        n = str(random.randint(10 ** 9, 10 ** 10 - 1))\n    return n[:3] + '-' + n[3:6] + '-' + n[6:]",
+        "detail": "src.api.lib.helpers.phone",
+        "documentation": {}
+    },
+    {
+        "label": "state",
+        "kind": 2,
+        "importPath": "src.api.lib.helpers.state",
+        "description": "src.api.lib.helpers.state",
+        "peekOfCode": "def state():\n    return fake.state()",
+        "detail": "src.api.lib.helpers.state",
+        "documentation": {}
+    },
+    {
+        "label": "Producer",
+        "kind": 6,
+        "importPath": "src.api.lib.producer.producer",
+        "description": "src.api.lib.producer.producer",
+        "peekOfCode": "class Producer(Thread):\n    def __init__(self, device, metadata):\n        Thread.__init__(self)\n        self.stop = False\n        self.name = device['name']\n        self.device = device\n        self.metadata = jsons.dump(metadata)\n        self.producer = KafkaProducer(\n                bootstrap_servers=device['kafka_server'],\n                value_serializer=lambda v: json.dumps(v).encode(\"utf-8\"),",
+        "detail": "src.api.lib.producer.producer",
+        "documentation": {}
+    },
+    {
+        "label": "running_devices",
+        "kind": 5,
+        "importPath": "src.api.lib.producer.producer",
+        "description": "src.api.lib.producer.producer",
+        "peekOfCode": "running_devices = {}\nclass Producer(Thread):\n    def __init__(self, device, metadata):\n        Thread.__init__(self)\n        self.stop = False\n        self.name = device['name']\n        self.device = device\n        self.metadata = jsons.dump(metadata)\n        self.producer = KafkaProducer(\n                bootstrap_servers=device['kafka_server'],",
+        "detail": "src.api.lib.producer.producer",
+        "documentation": {}
+    },
+    {
+        "label": "generate",
+        "kind": 2,
+        "importPath": "src.api.lib.generate",
+        "description": "src.api.lib.generate",
+        "peekOfCode": "def generate(template):\n    \"\"\"A really useful function.\n        Returns None\n        \"\"\"\n    if type(template) == dict:\n        obj = {}\n        for i in template.keys():\n            regex = r\"^.+\\|optional$\"\n            matches = re.match(regex, i)\n            if matches is not None:  # Optional",
+        "detail": "src.api.lib.generate",
+        "documentation": {}
+    },
+    {
+        "label": "Device",
+        "kind": 6,
+        "importPath": "src.api.models.models",
+        "description": "src.api.models.models",
+        "peekOfCode": "class Device(BaseModel):\n    name: str\n    kafka_server:str\n    kafka_topic:str\n    frequency_s: int\n    messages:int\n    timestamp_label: str\n    auto_start: bool",
+        "detail": "src.api.models.models",
+        "documentation": {}
+    },
+    {
+        "label": "test_device_sequence",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def test_device_sequence():\n    \"\"\" Runs testing sequence \"\"\"\n    delete_devices()\n    get_metadata_sample()\n    add_device_bad_body()\n    add_device()\n    get_device()\n    get_devices()\n    add_metadata()\n    get_metadata()",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_devices",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_devices():\n    \"\"\" Tests GET all devices endpoint \"\"\"\n    response = client.get(\"/api/v1/devices\")\n    assert response.status_code == 200\n    resp = response.json()\n    assert len(resp[\"items\"]) == resp[\"total\"]\ndef delete_devices():\n    \"\"\" Tests DELETE all devices endpoint \"\"\"\n    response = client.delete(\"/api/v1/devices\")\n    assert response.status_code == 200",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "delete_devices",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def delete_devices():\n    \"\"\" Tests DELETE all devices endpoint \"\"\"\n    response = client.delete(\"/api/v1/devices\")\n    assert response.status_code == 200\n    assert  response.json()[\"total\"] == 0\n    assert len(table_devices.all()) == 0\ndef get_running_devices():\n    response = client.get(\"/api/v1/devices/running\")\n    assert response.status_code == 200\n    assert response.json()['items'][0] == config",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_running_devices",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_running_devices():\n    response = client.get(\"/api/v1/devices/running\")\n    assert response.status_code == 200\n    assert response.json()['items'][0] == config\ndef start_all_devices():\n    response = client.put(\"/api/v1/devices/start\")\n    assert response.status_code == 202\n    assert response.json()[\"total\"] == 1\ndef stop_all_devices():\n    response = client.put(\"/api/v1/devices/stop\")",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "start_all_devices",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def start_all_devices():\n    response = client.put(\"/api/v1/devices/start\")\n    assert response.status_code == 202\n    assert response.json()[\"total\"] == 1\ndef stop_all_devices():\n    response = client.put(\"/api/v1/devices/stop\")\n    assert response.status_code == 202\n    assert response.json()[\"total\"] == 0\ndef add_device():\n    \"\"\" Tests Add device \"\"\"",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "stop_all_devices",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def stop_all_devices():\n    response = client.put(\"/api/v1/devices/stop\")\n    assert response.status_code == 202\n    assert response.json()[\"total\"] == 0\ndef add_device():\n    \"\"\" Tests Add device \"\"\"\n    response = client.post(\"/api/v1/device\", json=config)\n    assert response.status_code == 201\n    assert response.json() == config\ndef add_device_bad_body():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "add_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def add_device():\n    \"\"\" Tests Add device \"\"\"\n    response = client.post(\"/api/v1/device\", json=config)\n    assert response.status_code == 201\n    assert response.json() == config\ndef add_device_bad_body():\n    \"\"\" Tests Add device with bad body\"\"\"\n    response = client.post(\"/api/v1/device\", json={})\n    assert response.status_code == 422\ndef get_device():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "add_device_bad_body",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def add_device_bad_body():\n    \"\"\" Tests Add device with bad body\"\"\"\n    response = client.post(\"/api/v1/device\", json={})\n    assert response.status_code == 422\ndef get_device():\n    \"\"\" Tests Get device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}\")\n    assert response.status_code == 200\n    assert response.json() == config\ndef delete_device():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_device():\n    \"\"\" Tests Get device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}\")\n    assert response.status_code == 200\n    assert response.json() == config\ndef delete_device():\n    \"\"\" Tests Delete device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}\")\n    assert response.status_code == 200\n    response.json() == device",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "delete_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def delete_device():\n    \"\"\" Tests Delete device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}\")\n    assert response.status_code == 200\n    response.json() == device\ndef start_device():\n    \"\"\" Tests start device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/start\")\n    assert response.status_code == 202\n    assert  response.json()[\"total\"] == 1",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "start_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def start_device():\n    \"\"\" Tests start device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/start\")\n    assert response.status_code == 202\n    assert  response.json()[\"total\"] == 1\n    assert device in running_devices\ndef stop_device():\n    \"\"\" Tests Stop device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/stop\")\n    assert response.status_code == 202",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "stop_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def stop_device():\n    \"\"\" Tests Stop device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/stop\")\n    assert response.status_code == 202\n    assert  response.json()[\"total\"] == 0\n    assert device not in running_devices\ndef get_inexistent_device():\n    \"\"\" Tests Get inexistent device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}\")\n    assert response.status_code == 404",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_inexistent_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_inexistent_device():\n    \"\"\" Tests Get inexistent device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}\")\n    assert response.status_code == 404\ndef delete_inexistent_device():\n    \"\"\" Tests Delete inexistent device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}\")\n    assert response.status_code == 404\ndef add_metadata():\n    \"\"\" Tests Add metadata to device \"\"\"",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "delete_inexistent_device",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def delete_inexistent_device():\n    \"\"\" Tests Delete inexistent device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}\")\n    assert response.status_code == 404\ndef add_metadata():\n    \"\"\" Tests Add metadata to device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/metadata\", json=metadata)\n    assert response.status_code == 201\n    assert response.json() == metadata\ndef get_metadata():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "add_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def add_metadata():\n    \"\"\" Tests Add metadata to device \"\"\"\n    response = client.put(f\"/api/v1/device/{device}/metadata\", json=metadata)\n    assert response.status_code == 201\n    assert response.json() == metadata\ndef get_metadata():\n    \"\"\" Tests Get metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 200\n    assert response.json() == metadata",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_metadata():\n    \"\"\" Tests Get metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 200\n    assert response.json() == metadata\ndef delete_metadata():\n    \"\"\" Tests Delete metadata to device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 200\ndef get_inexistent_metadata():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "delete_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def delete_metadata():\n    \"\"\" Tests Delete metadata to device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 200\ndef get_inexistent_metadata():\n    \"\"\" Tests Get inexistent metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 404\ndef delete_inexistent_metadata():\n    \"\"\" Tests Delete inexistent metadata of device \"\"\"",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_inexistent_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_inexistent_metadata():\n    \"\"\" Tests Get inexistent metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 404\ndef delete_inexistent_metadata():\n    \"\"\" Tests Delete inexistent metadata of device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 404\ndef generate_from_metadata():\n    \"\"\" Tests Generate metadata of device \"\"\"",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "delete_inexistent_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def delete_inexistent_metadata():\n    \"\"\" Tests Delete inexistent metadata of device \"\"\"\n    response = client.delete(f\"/api/v1/device/{device}/metadata\")\n    assert response.status_code == 404\ndef generate_from_metadata():\n    \"\"\" Tests Generate metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata/generate\")\n    assert response.status_code == 200\n    assert response.json() != metadata\ndef get_metadata_sample():",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "generate_from_metadata",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def generate_from_metadata():\n    \"\"\" Tests Generate metadata of device \"\"\"\n    response = client.get(f\"/api/v1/device/{device}/metadata/generate\")\n    assert response.status_code == 200\n    assert response.json() != metadata\ndef get_metadata_sample():\n    \"\"\" Tests Get metadata sample \"\"\"\n    with open('./samples/sample.json', 'r') as f:\n            s = f.read()\n            response = client.get(\"/api/v1/metadata/sample\")",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "get_metadata_sample",
+        "kind": 2,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "def get_metadata_sample():\n    \"\"\" Tests Get metadata sample \"\"\"\n    with open('./samples/sample.json', 'r') as f:\n            s = f.read()\n            response = client.get(\"/api/v1/metadata/sample\")\n            assert response.status_code == 200\n            assert response.json() == json.loads(s)",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "client = TestClient(v1)\ndevice = str(uuid.uuid4())\nconfig = {\n\"name\": f\"{device}\",\n\"kafka_server\": \"kafka:9092\",\n\"kafka_topic\": \"usage\",\n\"frequency_s\": 1,\n\"messages\":100,\n\"timestamp_label\": \"date\",\n\"auto_start\": True",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "device = str(uuid.uuid4())\nconfig = {\n\"name\": f\"{device}\",\n\"kafka_server\": \"kafka:9092\",\n\"kafka_topic\": \"usage\",\n\"frequency_s\": 1,\n\"messages\":100,\n\"timestamp_label\": \"date\",\n\"auto_start\": True\n}",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 5,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "config = {\n\"name\": f\"{device}\",\n\"kafka_server\": \"kafka:9092\",\n\"kafka_topic\": \"usage\",\n\"frequency_s\": 1,\n\"messages\":100,\n\"timestamp_label\": \"date\",\n\"auto_start\": True\n}\nmetadata = {",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "metadata",
+        "kind": 5,
+        "importPath": "src.api.tests.test_devices",
+        "description": "src.api.tests.test_devices",
+        "peekOfCode": "metadata = {\n\"name\": \"{{name()}}\",\n\"isActive\": \"{{bool()}}\",\n\"latitude\": \"{{floating(-90.000001, 90)}}\",\n\"longitude\": \"{{floating(-180.000001, 180)}}\"\n}\ndef test_device_sequence():\n    \"\"\" Runs testing sequence \"\"\"\n    delete_devices()\n    get_metadata_sample()",
+        "detail": "src.api.tests.test_devices",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "db = TinyDB('./database/devices.json')\ntable_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())",
+        "detail": "src.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "table_devices",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "table_devices = db.table('devices')\ntable_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])",
+        "detail": "src.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "table_templates",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "table_templates = db.table('metadata')\ndevices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():",
+        "detail": "src.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "devices",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "devices = Query()\ntemplates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"",
+        "detail": "src.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "templates",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "templates = Query()\nv1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"\n    db.drop_tables()",
+        "detail": "src.api.api",
+        "documentation": {}
+    },
+    {
+        "label": "v1",
+        "kind": 5,
+        "importPath": "src.api.api",
+        "description": "src.api.api",
+        "peekOfCode": "v1 = FastAPI()\n@v1.get(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def get_devices(page: int = 1, size: int = 50):\n    \"\"\"Gets all saved devices\"\"\"\n    return paginate(table_devices.all())\n@v1.delete(\"/api/v1/devices\", tags=[\"Devices\"], response_model=Page[Device])\nasync def delete_devices():\n    \"\"\"Delete all devices and metadata\"\"\"\n    db.drop_tables()\n    return paginate(table_devices.all())",
+        "detail": "src.api.api",
+        "documentation": {}
+    }
+]

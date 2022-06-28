@@ -12,9 +12,3 @@ class Device(BaseModel):
     messages:int
     timestamp_label: str
     auto_start: bool
-
-
-class Metadata(BaseModel):
-
-    device_name: str
-    template: str

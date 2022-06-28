@@ -1,0 +1,5 @@
+{
+  "_id": "{{object_id()}}",
+  "latitude": "{{floating(-90.000001, 90)}}",
+  "longitude": "{{floating(-180.000001, 180)}}"
+}

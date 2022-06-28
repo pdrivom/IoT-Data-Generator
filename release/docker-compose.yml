@@ -5,8 +5,6 @@ services:
   api:
     hostname: iot-data-generator-api
     image: pdrivom/iot-data-generator:v1
-    build:
-      context: .
     ports:
       - 8000:8000
     volumes:
