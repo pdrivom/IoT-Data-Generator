@@ -24,7 +24,7 @@ After downloading the file, just run the command (on the same folder):
 
     docker-compose up
 
-> If needed edit the compose file in order to properly set the Docker networks.
+> If needed, edit the compose file in order to properly set the Docker networks.
 
 In order to use the **API**, different endpoints are implemented and can be found on the **API documentation** `http://localhost:8000/docs`
 
