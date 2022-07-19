@@ -18,11 +18,11 @@ The **IoT Data Generator** a REST API where ***Devices*** can be created and the
 
  On a Linux machine or WSL with **Docker installed**, navigate to a proper folder  than run the command below:
 
-    `wget https://raw.githubusercontent.com/pdrivom/IoT-Data-Generator/master/release/docker-compose.yml`
+    wget https://raw.githubusercontent.com/pdrivom/IoT-Data-Generator/master/release/docker-compose.yml
 
 After downloading the file, just run the command (on the same folder):
 
-    `docker-compose up`
+    docker-compose up
 
 > If needed edit the compose file in order to properly set the Docker networks.
 
