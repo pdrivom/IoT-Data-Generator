@@ -1,6 +1,3 @@
-
-
-
 # IoT JSON Data Generator API
 
 
@@ -8,11 +5,10 @@
 
 This is a fork from [gtavasoli](https://github.com/gtavasoli)/**[JSON-Generator](https://github.com/gtavasoli/JSON-Generator)** with the objective of containerize his JSON Generator for IoT Data and access it using a API.
 
-**This means that all JSON generated has a timestamp property, so can be simulated IoT *Devices* that published JSON data to a Kafka Cluster and in the future to a RabbitMQ Cluster.**
+**This means that all JSON generated has a timestamp property, so can be simulated IoT *Devices* that published JSON data to a Kafka, RabbitMQ or MQTT Client.**
 
 
 The **IoT Data Generator** a REST API where ***Devices*** can be created and then add it's metadata, allowing users to generate fake data based on a template.
-
 
 
 
@@ -22,40 +18,13 @@ The **IoT Data Generator** a REST API where ***Devices*** can be created and the
 
  On a Linux machine or WSL with **Docker installed**, navigate to a proper folder  than run the command below:
 
-    https://raw.githubusercontent.com/pdrivom/IoT-Data-Generator/master/release/docker-compose.yml
+    `wget https://raw.githubusercontent.com/pdrivom/IoT-Data-Generator/master/release/docker-compose.yml`
 
 After downloading the file, just run the command (on the same folder):
 
-    docker-compose up
+    `docker-compose up`
 
-This compose file contains the **API and the Kafka Cluster** containers if you want to deploy **on a existing environment** use the file below:
-
-	version: '3'
-
-	services:
-		api:
-			hostname: iot-data-generator-api
-			image: pdrivom/iot-data-generator:latest
-			external_links:
-			  - <SERVICE:ALIAS>	#Your Kafka Service
-			ports:
-				- 8000:8000
-			volumes:
-				- iot-data-generator:/usr/src/api
-			networks:
-				- api
-				- <kafka>  # your Kafka Network
-
-			volumes:
-			# mount volume in order to keep the data persistent
-				iot-data-generator:
-
-			networks:
-				<kafka>: 		# your Kafka Network
-					external:true
-				api:
-					driver: bridge
-
+> If needed edit the compose file in order to properly set the Docker networks.
 
 In order to use the **API**, different endpoints are implemented and can be found on the **API documentation** `http://localhost:8000/docs`
 
@@ -63,48 +32,58 @@ In order to use the **API**, different endpoints are implemented and can be foun
 > **The API can be tested using Postman or a Web Browser.**
 
 ## Example
+
+### Data Destination
+
+**`[POST] http://localhost:8000/api/v1/destination`**
+`
+{
+    "name": "kafka-temperature",
+    "server": "kafka",
+    "port": 9092,
+    "topic": "temperature"
+}
+`
+
 ### Device
 
 **`[POST] http://localhost:8000/api/v1/device`**
 
 `
-	{
-	"name": "gps",
-	"kafka_server": "kafka:9092",
-	"kafka_topic": "location",
-	"frequency_s": 1,
-	"messages": 100,
-	"timestamp_label": "datetime",
-	"auto_start": true
-	}
+{
+    "name": "temperature-sensor",
+    "frequency_s": 1,
+    "messages": 100,
+    "timestamp_label": "date",
+    "auto_start": true,
+    "data_destination":"kafka-temperature"
+}
 `
 
-
-- `kafka_server` is the Kafka bootstrap-server,
 - `frequency_s` sets the frequency for the publish of messages in seconds,
 - `messages` is number of messages published until the device stops,
 - `timestamp_label` sets the name of the property that contains the timestamp (`datetime.utcnow()`),
-- `auto_start = true` , the device will start publishing as soon as the container starts.
+- `auto_start = true` , the device will start publishing as soon as the container starts. Needs to be started after added.
+- `data_destination` , the data destination to publishing the messages.
 
 ### Metadata
-**`[POST] http://localhost:8000/api/v1/gps/metadata`**
+**`[POST] http://localhost:8000/api/v1/temperature-sensor/metadata`**
 
 `
-	{
-	"_id": "{{object_id()}}",
-	"latitude": "{{floating(-90.000001, 90)}}",
-	"longitude": "{{floating(-180.000001, 180)}}"
-	}
+{
+  "_id": "{{object_id()}}",
+  "temperature": "{{integer(-180, 180)}}"
+}
 `
 
 ### Start/Stop
- >To start device `gps` to publish messages.
+ >To start device `temperature-sensor` to publish messages.
 
-**`[PUT]  http://localhost:8000/api/v1/device/gps/start`**
+**`[PUT]  http://localhost:8000/api/v1/device/temperature-sensor/start`**
 
->To stop device `gps` from publishing messages.
+>To stop device `temperature-sensor` from publishing messages.
 
-**`[PUT]  http://localhost:8000/api/v1/device/gps/stop`**
+**`[PUT]  http://localhost:8000/api/v1/device/temperature-sensor/stop`**
 
 
 ### Start/Stop All
@@ -144,4 +123,16 @@ A more extended template can be found calling the **API** endpoint `[GET] http:/
 ## ToDo
 
 - Better Unit Tests
-- Add RabbitMQ compatibility
+
+
+## Developer's Notes
+
+To Run API in development:
+`
+docker-compose -f docker-compose.yml run --rm --service-ports api sh -c "uvicorn api:v1 --host 0.0.0.0 --port 8000 --reload"
+`
+
+To Run API Tests in development:
+`
+docker-compose -f docker-compose.yml run --rm api sh -c "pytest"
+`

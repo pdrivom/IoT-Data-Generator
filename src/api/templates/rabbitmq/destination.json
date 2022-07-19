@@ -1,0 +1,10 @@
+{
+    "name": "rabbitmq-gps",
+    "server": "rabbitmq",
+    "port": 5672,
+    "exchange": "",
+    "routing_key": "gps",
+    "queue": "gps",
+    "username":"guest",
+    "password":"guest"
+}

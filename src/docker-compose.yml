@@ -10,7 +10,7 @@ services:
     ports:
       - 22181:2181
     networks:
-      - kafka
+      - dev_env
 
   kafka:
     image: confluentinc/cp-kafka:latest
@@ -26,12 +26,32 @@ services:
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     networks:
-      - kafka
+      - dev_env
     healthcheck:
       test: kafka-topics --bootstrap-server kafka:9092 --list
       interval: 30s
       timeout: 20s
       retries: 3
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    hostname: rabbitmq
+    ports:
+        - 5672:5672
+        - 15672:15672
+    networks:
+        - dev_env
+
+  mosquitto:
+    image: eclipse-mosquitto
+    hostname: mosquitto
+    volumes:
+      - ./volumes/mosquitto:/mosquitto/:rw
+    ports:
+      - 1883:1883
+      - 9001:9001
+    networks:
+      - dev_env
 
   api:
     hostname: iot-data-generator-api
@@ -39,6 +59,10 @@ services:
     depends_on:
       kafka:
         condition: service_healthy
+      rabbitmq:
+        condition: service_started
+      mosquitto:
+        condition: service_started
     build:
       context: .
     ports:
@@ -47,9 +71,9 @@ services:
       - ./api:/usr/src/api
     networks:
       - api
-      - kafka
+      - dev_env
 
 networks:
   api:
-  kafka:
+  dev_env:
     driver: bridge

@@ -1,0 +1,6 @@
+{
+    "name": "mqtt-flow",
+    "server": "mosquitto",
+    "port": 1883,
+    "topic": "flow"
+}

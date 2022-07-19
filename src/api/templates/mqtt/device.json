@@ -1,0 +1,8 @@
+{
+    "name": "flowmeter",
+    "frequency_s": 3,
+    "messages": 100,
+    "timestamp_label": "date",
+    "auto_start": true,
+    "data_destination":"mqtt-flow"
+}

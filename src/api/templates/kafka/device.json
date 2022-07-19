@@ -1,9 +1,8 @@
 {
     "name": "temperature-sensor",
-    "kafka_server": "kafka:9092",
-    "kafka_topic": "temperature",
     "frequency_s": 1,
     "messages": 100,
     "timestamp_label": "date",
-    "auto_start": true
+    "auto_start": true,
+    "data_destination":"kafka-temperature"
 }

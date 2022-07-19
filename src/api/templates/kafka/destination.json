@@ -1,0 +1,6 @@
+{
+    "name": "kafka-temperature",
+    "server": "kafka",
+    "port": 9092,
+    "topic": "temperature"
+}
