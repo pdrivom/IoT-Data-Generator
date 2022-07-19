@@ -36,6 +36,7 @@ In order to use the **API**, different endpoints are implemented and can be foun
 ### Data Destination
 
 **`[POST] http://localhost:8000/api/v1/destination`**
+
 `
 {
     "name": "kafka-temperature",
