@@ -46,7 +46,7 @@ services:
     image: eclipse-mosquitto
     hostname: mosquitto
     volumes:
-      - ./volumes/mosquitto:/mosquitto/:rw
+      - ./configs/mosquitto:/mosquitto/config:rw
     ports:
       - 1883:1883
       - 9001:9001
