@@ -2,7 +2,7 @@
 name: Checks
 
 on: [push]
-
+  
 jobs:
   test-not-lint:
     name: Test but not Lint
@@ -11,15 +11,18 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ secrets.DOCKERHUB_USER }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{secrets.DOCKERHUB_USER}}
+          password: ${{secrets.DOCKERHUB_TOKEN}}
       - name: Checkout
         uses: actions/checkout@v2
       - name: Test
         working-directory: ./src
         run: docker-compose up -d && docker-compose run --rm api sh -c "pytest"
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y%m%d%M%S')"
       - name: Build the Docker image
         working-directory: ./src
-        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:latest  
+        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
       - name: Docker Push
-        run: docker push pdrivom/iot-data-generator:latest  
+        run: docker push pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
