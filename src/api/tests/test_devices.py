@@ -49,6 +49,7 @@ def test_device_sequence():
         delete_inexistent_device(device)
         delete_data_destination(destination)
         delete_inexistent_data_destination(destination)
+        delete_destinations()
 
 
 def get_devices():
