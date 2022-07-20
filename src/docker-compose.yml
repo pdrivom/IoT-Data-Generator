@@ -55,7 +55,10 @@ services:
 
   api:
     hostname: iot-data-generator-api
-    image: pdrivom/iot-data-generator:v1
+    image: pdrivom/iot-data-generator:dev
+    build:
+      context: ./
+      target: tests
     depends_on:
       kafka:
         condition: service_healthy
@@ -63,8 +66,6 @@ services:
         condition: service_started
       mosquitto:
         condition: service_started
-    build:
-      context: .
     ports:
       - 8000:8000
     volumes:
