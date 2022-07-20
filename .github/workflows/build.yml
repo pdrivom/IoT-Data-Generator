@@ -2,10 +2,6 @@
 name: Checks
 
 on: [push]
-
-env:
-  DOCKERHUB_USER: ${{secrets.DOCKERHUB_USER}}
-  DOCKERHUB_TOKEN: ${{secrets.DOCKERHUB_TOKEN}}
   
 jobs:
   test-not-lint:
@@ -27,6 +23,6 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y%m%d%M%S')"
       - name: Build the Docker image
         working-directory: ./src
-        run: docker build . --file Dockerfile --tag $DOCKER_USER/iot-data-generator:${{ steps.date.outputs.date }}  
+        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
       - name: Docker Push
-        run: docker push $DOCKER_USER/iot-data-generator:${{ steps.date.outputs.date }}  
+        run: docker push pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
