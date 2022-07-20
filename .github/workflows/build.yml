@@ -25,6 +25,4 @@ jobs:
         working-directory: ./src
         run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
       - name: Docker Push Current
-        run: docker push pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
-      - name: Docker Push Latest
-        run: docker push pdrivom/iot-data-generator:latest  
+        run: docker push pdrivom/iot-data-generator:${{ steps.date.outputs.date }}
