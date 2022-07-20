@@ -2,7 +2,7 @@
 name: Checks
 
 on: [push]
-  
+
 jobs:
   test-not-lint:
     name: Test but not Lint
@@ -23,11 +23,11 @@ jobs:
         run: echo "::set-output name=date::$(date +'%Y%m%d%M%S')"
       - name: Build the Docker image
         working-directory: ./src
-        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:${{ steps.date.outputs.date }}  
+        run: docker build . --file Dockerfile --target production --tag pdrivom/iot-data-generator:${{ steps.date.outputs.date }}
       - name: Docker Push Current
         run: docker push pdrivom/iot-data-generator:${{ steps.date.outputs.date }}
       - name: Build Latest Docker image
         working-directory: ./src
-        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:latest 
+        run: docker build . --file Dockerfile --target production --tag pdrivom/iot-data-generator:latest
       - name: Docker Push Latest
         run: docker push pdrivom/iot-data-generator:latest
