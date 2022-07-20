@@ -18,8 +18,11 @@ jobs:
       - name: Test
         working-directory: ./src
         run: docker-compose up -d && docker-compose run --rm api sh -c "pytest"
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
       - name: Build the Docker image
         working-directory: ./src
-        run: docker build . --file Dockerfile --tag pdrivom/iot-data-generator:latest  
+        run: docker build . --file Dockerfile --tag ${{secrets.DOCKER_USER}}/iot-data-generator:${{ steps.date.outputs.date }}  
       - name: Docker Push
-        run: docker push pdrivom/iot-data-generator:latest  
+        run: docker push ${{secrets.DOCKER_USER}}/iot-data-generator:${{ steps.date.outputs.date }}  
