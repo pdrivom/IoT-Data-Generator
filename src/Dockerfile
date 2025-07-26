@@ -1,4 +1,4 @@
-FROM python:3-alpine AS production
+FROM python:3.14.0rc1-alpine AS production
 LABEL name Pedro Marques
 
 ENV PYHTONUNBUFFERED 1
